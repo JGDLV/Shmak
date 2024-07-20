@@ -1,0 +1,125 @@
+extends _layout.pug
+
+block variables
+    -
+        var title = 'Новости'
+        var description = 'Новости'
+        var index = true
+
+        var news = [
+            {
+                image: 'img/news-01.png',
+                title: 'Обновление меню',
+                text: 'Лето совсем рядом! Мы уже добавили сезонные позиции в наше меню! Скорее попробуй!',
+                button: {
+                    href: 'news-detail.html',
+                    text: 'подробнее'
+                },
+            },
+            {
+                image: 'img/news-02.png',
+                title: 'Обновление меню',
+                text: 'Лето совсем рядом! Мы уже добавили сезонные позиции в наше меню! Скорее попробуй!',
+                button: {
+                    href: 'news-detail.html',
+                    text: 'подробнее'
+                },
+            },
+            {
+                image: 'img/news-03.png',
+                title: 'Обновление меню',
+                text: 'Лето совсем рядом! Мы уже добавили сезонные позиции в наше меню! Скорее попробуй!',
+                button: {
+                    href: 'news-detail.html',
+                    text: 'подробнее'
+                },
+            },
+            {
+                image: 'img/news-04.png',
+                title: 'Обновление меню',
+                text: 'Лето совсем рядом! Мы уже добавили сезонные позиции в наше меню! Скорее попробуй!',
+                button: {
+                    href: 'news-detail.html',
+                    text: 'подробнее'
+                },
+            },
+            {
+                image: 'img/news-01.png',
+                title: 'Обновление меню',
+                text: 'Лето совсем рядом! Мы уже добавили сезонные позиции в наше меню! Скорее попробуй!',
+                button: {
+                    href: 'news-detail.html',
+                    text: 'подробнее'
+                },
+            },
+            {
+                image: 'img/news-02.png',
+                title: 'Обновление меню',
+                text: 'Лето совсем рядом! Мы уже добавили сезонные позиции в наше меню! Скорее попробуй!',
+                button: {
+                    href: 'news-detail.html',
+                    text: 'подробнее'
+                },
+            },
+            {
+                image: 'img/news-03.png',
+                title: 'Обновление меню',
+                text: 'Лето совсем рядом! Мы уже добавили сезонные позиции в наше меню! Скорее попробуй!',
+                button: {
+                    href: 'news-detail.html',
+                    text: 'подробнее'
+                },
+            },
+            {
+                image: 'img/news-04.png',
+                title: 'Обновление меню',
+                text: 'Лето совсем рядом! Мы уже добавили сезонные позиции в наше меню! Скорее попробуй!',
+                button: {
+                    href: 'news-detail.html',
+                    text: 'подробнее'
+                },
+            },
+        ]
+
+block content
+    .news-page
+        .section.intro
+            .container
+                .intro__inner
+                    .banner.banner--news.banner--dark
+                        img.banner__image(src="img/news-banner.png" alt="")
+                        h1 новости
+                    .subscribe.my-50.mb-70
+                        .subscribe__inner
+                            p.subscribe__text new year, same great food!
+                            a.subscribe__button.btn(href="#") подписаться
+                    .intro-grid
+                        .video
+                            video(src="video.mp4" poster="img/preview.png")
+                            img(src="img/play.svg" alt="")
+                        .teaser
+                            p.teaser__header.mb-13 мы отметили 7 лет нашей закусочной
+                            div.teaser__text
+                                p Скорее посмотри, как это было! 
+                                p Обязательно приходи на наши мероприятия! А <br>чтобы их не пропускать - подпишись на наш <br>телеграм, мы там заранее анонсируем их!
+        .section.news
+            .container
+                .news-swiper#news-swiper2
+                    .news-grid.swiper-wrapper
+                        each item in news
+                            .news__item.rotate.swiper-slide
+                                a.news__item-link(href=item.button.href) 
+                                    img.news__item-image(src=item.image alt=item.title)
+                                .news__item-content
+                                    a.news__item-title(href=item.button.href) !{item.title}
+                                    p.news__item-text !{item.text}
+                                a.news__item-button.btn(href=item.button.href) !{item.button.text}
+                .button-center 
+                    a.menu__button.btn(href="#") смотреть все меню
+
+        .section.empty.empty--static
+            .container
+                .subscribe
+                    .subscribe__inner
+                        p.subscribe__text подпишитесь на наш telegram
+                        a.subscribe__button.btn(href="#") подписаться

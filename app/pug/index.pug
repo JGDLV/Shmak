@@ -1,0 +1,24 @@
+extends _layout.pug
+
+block variables
+	-
+		var title = 'Главная страница'
+		var description = 'Главная страница'
+		var index = true
+
+block content
+	.main-page
+		include components/intro.pug
+		include components/recommend.pug
+		.section.empty
+			.container
+				.subscribe
+					.subscribe__inner
+						p.subscribe__text подпишитесь на наш telegram
+						a.subscribe__button.btn(href="#") подписаться
+		include components/menu.pug
+		include components/news.pug
+		.section.map
+			.container
+				.map__inner
+					<script type="text/javascript" charset="utf-8" async src="https://api-maps.yandex.ru/services/constructor/1.0/js/?um=constructor%3Ab61812ecc144459ae4278eb2d02c66223892d6e3e9fa5b351d2ed239f6fcc048&amp;width=100%25&amp;height=100%&amp;lang=ru_RU&amp;scroll=false"></script>

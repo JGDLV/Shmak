@@ -1,0 +1,47 @@
+-
+    var menu = [
+        {
+            image: 'img/menu-01.png',
+            title: 'Шмак Комбо',
+            text: 'Описание, которое заставляет выделяться слюну и думать о том, чтобы прямо сейчас вызвать заказать доставку.',
+            price: '740',
+            href: '#'
+        },
+        {
+            image: 'img/menu-02.png',
+            title: 'Шмак Комбо',
+            text: 'Описание, которое заставляет выделяться слюну и думать о том, чтобы прямо сейчас вызвать заказать доставку.',
+            price: '740',
+            href: '#'
+        },
+        {
+            image: 'img/menu-03.png',
+            title: 'Шмак Комбо',
+            text: 'Описание, которое заставляет выделяться слюну и думать о том, чтобы прямо сейчас вызвать заказать доставку.',
+            price: '740',
+            href: '#'
+        },
+        {
+            image: 'img/menu-04.png',
+            title: 'Шмак Комбо',
+            text: 'Описание, которое заставляет выделяться слюну и думать о том, чтобы прямо сейчас вызвать заказать доставку.',
+            price: '740',
+            href: '#'
+        },
+    ]
+
+.section.menu
+    .container
+        h2.section__header.section__header--dark.menu__header меню
+        .menu-swiper#menu-swiper
+            .menu-grid.swiper-wrapper
+                each item in menu
+                    .menu__item.swiper-slide.rotate
+                        .menu__item-link
+                            img.menu__item-image(src=item.image alt="")
+                        .menu__item-content
+                            .menu__item-title !{item.title}
+                            p.menu__item-text !{item.text}
+                            p.menu__item-price !{item.price}₽
+        .button-center 
+            a.menu__button.btn(href="#") смотреть все меню

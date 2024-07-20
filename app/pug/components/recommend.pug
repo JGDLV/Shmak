@@ -1,0 +1,45 @@
+-
+    var recommend = [
+        {
+            image: 'img/recommend-01.png',
+            title: 'шмак говядина',
+            text: 'шмак френчи говядина. с жар. луком, грибами и соусом сырным с трюфелем',
+            price: '740'
+        },
+        {
+            image: 'img/recommend-02.png',
+            title: 'шмак индейка',
+            text: 'шмак френчи говядина. с жар. луком, грибами и соусом сырным с трюфелем',
+            price: '740'
+        },
+        {
+            image: 'img/recommend-03.png',
+            title: 'шмак веге',
+            text: 'шмак френчи говядина. с жар. луком, грибами и соусом сырным с трюфелем',
+            price: '740'
+        },
+    ]
+
+//- .section.recommend.ornament.ornament--red
+.section.recommend
+    .experimental-bg.ornament.ornament--red.rellax
+        .container
+            img.decor.decor--1.rellax(src="img/decor-01.png", alt="" data-rellax-speed="0.5")
+            img.decor.decor--2.rellax(src="img/decor-02.png", alt="" data-rellax-speed="1")
+            img.decor.decor--3.rellax(src="img/decor-03.png", alt="" data-rellax-speed="0.1")
+            img.decor.decor--4.rellax(src="img/decor-04.png", alt="" data-rellax-speed="1")
+            img.decor.decor--5.rellax(src="img/decor-05.png", alt="" data-rellax-speed="1.5")
+            img.decor.decor--6.rellax(src="img/decor-06.png", alt="" data-rellax-speed="1")
+    .container
+        h2.section__header.section__header--light#something шеф рекомендует
+        .recommend-grid
+            each item in recommend
+                .recommend__item
+                    img.recommend__item-image(src=item.image alt="")
+                    .recommend__item-content
+                        p.recommend__item-title !{item.title}
+                        p.recommend__item-text !{item.text}
+                        p.recommend__item-price
+                            | !{item.price}
+                            span руб.
+        

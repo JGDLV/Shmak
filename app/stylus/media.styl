@@ -1,0 +1,822 @@
+@media (max-width: 1060px)
+    .header
+        padding: 16px 0
+
+        &__inner
+            justify-content: space-between
+
+            & > *
+                margin: 0
+
+    .progress-wrap
+        bottom: 30px
+        right: 16px
+
+@media (max-width: 992px)
+    .main-menu-items
+        gap: 20px
+
+    .section
+        padding: 30px 0
+
+        &:last-of-type
+            padding-bottom: 60px
+            padding-top: 30px
+
+    .intro
+        margin-bottom: 0 !important
+
+        .banner
+            margin-bottom: 0
+
+    .empty .subscribe
+        position: static
+        transform: none
+
+@media (max-width: 992px) and (min-width: 577px)
+    .slide
+        &__left
+            display: none
+
+        &__right
+            width: 100%
+            padding: 50px
+            text-align: left
+
+        &__header
+            br
+                display: block !important
+
+@media (max-width: 767px) and (min-width: 577px)
+    .slide
+        &__content-image
+            width: 199px
+            right: 40px
+            top: 97px
+
+@media (max-width: 992px) and (min-width: 480px)
+    .teaser
+        padding: 20px !important
+        min-height: 229px
+
+        &__header
+            font-size: 40px !important
+            line-height: 0.9 !important
+            position: relative
+            z-index: 10
+
+        &__text
+            position: relative
+            z-index: 10
+            max-width: 50%
+
+            br
+                display: none
+
+        &__image
+            height: 229px
+
+@media (max-width: 768px)
+    .logo
+        margin-right: auto
+
+    .slide__left
+        display: none
+
+    .intro
+        margin-bottom: 0 !important
+        padding-bottom: 0 !important
+
+        &-grid
+            gap: 35px
+            border-radius: 0
+
+    .section__header, .news-detail h1
+        font-size: 59.81px !important
+        line-height: 56.807px !important
+        margin-bottom: 30px !important
+
+    .header
+        display: none
+
+    .video
+        height: 204px
+        border-radius: 15px
+
+        img
+            width: 46px
+            height: 46px
+
+    .teaser
+        height: auto
+        border-radius: 15px !important
+        padding: 17px
+
+        &__header
+            font-size: 39px
+            line-height: 37.042px
+            margin-bottom: 15px !important
+
+        &__text
+            font-size: 13px
+            line-height: normal
+
+    .teaser__text p + p
+        margin-top: 16px
+
+    body
+        padding-top: 55px !important
+
+        &.mobile
+            overflow-x: hidden
+
+    .mobile-header
+        display: block
+
+    .section__header, .news-detail h1
+        font-size: 48px
+        line-height: 1.3
+        margin-bottom: 16px !important
+
+    .container
+        padding: 0 14px
+
+    .gallery-grid
+        grid-template-columns: repeat(2, 1fr)
+        gap: 15px
+
+    .footer
+        padding-top: 50px
+
+        .social
+            margin-top: -5px
+
+        &-logo
+            &__link
+                width: 60px
+
+        &_inner
+            grid-template-columns: repeat(4, 1fr)
+
+        &-logo
+            grid-row-end: 2
+
+        &-one
+            flex-direction: column
+            align-items: flex-end
+
+        &-two
+            grid-column-start: 1
+            justify-content: space-between
+            flex-wrap: wrap
+            align-items: flex-start
+            margin-top: 6px
+
+        &__section
+            margin: 0
+            width: 70%
+
+            &--left
+                order: 2
+
+            &--right
+                order: 0
+
+    .news-detail, .vacancies
+        .section__header
+            text-align: left
+
+    .vacancies__item
+        flex-direction: column
+
+    .recommend
+        &-grid
+            gap: 20px
+
+    .recommend__item
+        flex-direction: column-reverse !important
+        border-radius: 15px !important
+        position: relative
+        padding-bottom: 19px
+        padding-left: 0
+        padding-right: 0
+
+        &-image
+            width: calc(100% + 60px)
+            max-width: none
+            margin-left: 28px
+            margin-top: 8px
+
+        &-title
+            font-size: 40px
+            text-align: center
+            letter-spacing: 7px
+            margin-bottom: 4px
+
+        &-text
+            font-size: 15px
+            text-align: center
+
+        &-price
+            font-size: 40px
+            margin: 18px 0 0 20px
+
+            span
+                font-size: 20px
+                padding-left: 3px
+
+        &-content
+            // padding-top: 29px
+            // padding-left: 0
+            // padding-right: 0
+            padding: 23px 0 0 !important
+            max-width: 100%
+
+    .ornament
+        border-radius: 0
+
+        &::before
+            background-size: 181%
+
+    .intro-grid
+        grid-template-columns: 1fr
+
+    .video video
+        object-fit: cover
+
+    .menu-grid
+        display: flex
+        gap: 0
+
+    .news-grid
+        display: flex
+        gap: 0
+
+    .empty .subscribe
+        position: static
+        transform: none
+
+    .banner--news
+        border-radius: 15px
+
+        &::before
+            background: linear-gradient(0deg, #1A1C24 13.32%, rgba(100, 107, 138, 0) 88.94%)
+            height: 100%
+            width: 100%
+
+    .subscribe
+        border-radius: 15px
+
+    .menu-page
+        .intro
+            padding-top: 23px
+            margin-bottom: 95px !important
+
+        .recommend
+            padding: 0 0 58px
+
+            .section__header
+                margin-top: -6px !important
+                margin-bottom: 17px !important
+
+        .subscribe
+            &__text
+                font-size: 47px !important
+                line-height: 44.641px !important
+                // margin-bottom: 26px !important
+
+        .empty
+            padding: 40px 0 50px
+
+    .banner
+        border-radius: 15px
+        justify-content: flex-end
+        padding: 0 0 33px !important
+        text-align: center
+
+        &--dark, &--dark2
+            &::before
+                background: linear-gradient(to top, #1A1C24 13.32%, rgba(100, 107, 138, 0) 88.94%)
+                border-radius: 15px
+                right: 0
+
+        &--dark2
+            &::before
+                height: 284px
+                top: auto
+
+        &__image
+            border-radius: 15px
+
+        br
+            display: none
+
+    .contacts-page
+        .intro
+            padding-top: 23px
+
+        .contacts
+            padding-top: 39px
+
+            &-grid
+                grid-row-gap: 34px
+                grid-column-gap: 11px
+                margin-bottom: 53px
+
+            &__item
+                &-text
+                    font-size: 14px
+
+        .section__header
+            margin-bottom: 19px !important
+
+        .empty
+            padding: 25px 0 59px
+
+    .map
+        padding: 0 0 0
+
+        &__inner
+            border-radius: 15px
+
+    .bio-page
+        .banner
+            height: 386px
+            margin-bottom: 0
+
+            h1
+                font-size: 48px !important
+                line-height: 45.59px !important
+                margin-bottom: 4px !important
+
+            p
+                font-size: 13px
+                line-height: 16.9px
+
+        .intro
+            padding: 23px 0 50px !important
+
+        .bio-info
+            padding-top: 31px
+            margin-bottom: 51px
+
+            &::after
+                width: 107px
+                height: 92px
+                background-size: contain
+                right: 31px
+                bottom: -38px
+
+        .bio__quote
+            font-size: 16px
+            line-height: 20.8px
+            margin-bottom: 34px
+
+        .bio__name
+            font-size: 13px
+            text-align: center
+            margin-right: 0
+
+        .section__header
+            text-align: center
+            margin-bottom: 46px !important
+
+        .path
+            padding: 0 !important
+
+        .bio
+            &-grid
+                gap: 46px
+
+            &__item
+                flex-direction: column
+                gap: 16px
+
+                &-image
+                    width: auto
+                    height: auto
+                    border-radius: 0
+
+                &-header
+                    font-size: 45px
+                    margin-bottom: 5px
+
+                &-text
+                    font-size: 14px
+                    line-height: 1.22
+
+        .empty
+            padding-bottom: 52px
+
+    .vacancies-page
+        .intro
+            padding-top: 23px !important
+            margin-bottom: 0
+
+        .vacancies
+            padding-top: 22px
+
+            &-grid
+                gap: 46px
+
+            &__item
+                gap: 19px
+
+                &-image
+                    border-radius: 15px
+
+                &-header
+                    margin-bottom: 2px
+
+                &-text
+                    font-size: 14px
+                    line-height: 1.22
+
+        .empty
+            padding: 14px 0 52px
+
+    .news-page-detail
+        .intro
+            padding-top: 23px !important
+
+        .news-detail
+            padding-top: 22px
+
+            p
+                font-size: 14px
+                line-height: 1.22
+
+        .empty
+            padding-bottom: 60px
+
+    .news-page
+        .intro
+            padding-top: 23px !important
+
+            .subscribe
+                margin: 60px 0 !important
+
+        .banner
+            padding: 0 0 17px !important
+            margin-bottom: 10px
+
+            h1
+                font-size: 65px
+
+        .news
+            padding-top: 60px
+
+        .button-center
+            display: none
+
+        .news-grid
+            margin-bottom: 0
+
+        .empty
+            padding-top: 0
+            padding-bottom: 57px
+
+    .main-page
+        .banner
+            height: 470px
+            margin-bottom: 27px
+
+        .intro
+            // padding-top: 59px
+            padding-top: 24px
+            margin-bottom: 80px !important
+
+            .subscribe
+                margin: 0 0 60px !important
+
+            &-grid
+                gap: 26px
+                padding-bottom: 60px
+
+                .teaser
+                    padding: 27px 17px 45px 17px
+                    overflow: hidden
+
+                    &__header
+                        font-size: 53px
+                        line-height: 50.339px
+                        position: relative
+                        z-index: 10
+
+                    &__text
+                        font-size: 13px
+                        line-height: normal
+                        max-width: 50%
+                        position: relative
+                        z-index: 10
+
+                        br
+                            display: none
+
+                    &__image
+                        height: 229px
+
+        .recommend
+            // padding: 17px 0 50px
+            padding: 0 0 50px
+            margin-top: 15px
+
+            &::before
+                height: 15px
+                top: -15px
+
+            .section__header
+                font-size: 53px !important
+                line-height: 50.339px !important
+                margin: 0 0 21px !important
+
+        .empty
+            padding: 60px 0 59px
+
+        .menu
+            padding: 51px 0 51px
+            background: $gray
+
+            &__item
+                &-content
+                    background: #fff
+
+            .section__header
+                font-size: 53px !important
+                line-height: 50.339px !important
+                margin-bottom: 29px !important
+
+        .news
+            padding: 59px 0 25px
+            background: #fff !important
+
+            &__item
+                &-content
+                    background: $gray
+
+        .map
+            padding-bottom: 60px
+            padding-top: 35px
+
+    .decor
+        display: none
+
+@media (max-width: 576px)
+    .recommend
+        border-radius: 0
+
+        &__item
+            &.stub
+                &:nth-child(1)
+                    background: linear-gradient(to top, transparent 50%, #fff 50% #fff 100%), url('../img/stub-left2.svg') no-repeat bottom right / 250% !important
+
+                &:nth-child(2)
+                    background: linear-gradient(to top, transparent 50%, #fff 50% #fff 100%), url('../img/stub-right2.svg') no-repeat bottom left / 250% !important
+
+                &:nth-child(3)
+                    background: linear-gradient(to bottom, transparent 50%, #fff 50% #fff 100%), url('../img/stub-top.svg') no-repeat top right / 250% !important
+
+    .logo
+        margin-right: auto
+
+    .intro
+        margin-bottom: 0 !important
+        padding-bottom: 0 !important
+
+    .section__header, .news-detail h1
+        font-size: 59.81px !important
+        line-height: 56.807px !important
+        margin-bottom: 30px !important
+
+    .gallery-grid
+        grid-template-columns: 1fr
+
+    .subscribe
+        padding: 25px 11px 31px !important
+
+        &::after
+            width: 41px
+            height: 36px
+            background-size: contain
+            right: 14px
+            top: -18px
+
+        &__inner
+            flex-direction: column
+            text-align: center
+
+        &__text
+            font-size: 55px !important
+            line-height: 52.239px !important
+            margin-bottom: 15px !important
+
+        &__button
+            width: 155px !important
+            font-size: 13px !important
+
+    .created
+        order: 1
+
+    .footer__section
+        width: auto
+
+    .banner
+        min-height: 231px
+        margin-bottom: 0
+
+    .contacts-grid
+        grid-template-columns: repeat(2, 1fr)
+
+    .vacancies__item-image
+        width: 100%
+
+    .main-page
+        .banner
+            background: none
+
+        .slide
+            background: none
+
+            &__left
+                display: none
+
+            &__right
+                padding-top: 29px
+                width: 100%
+                background: $gray
+                border-radius: 15px
+                height: 320px
+
+            &__text
+                font-size: 16px
+                line-height: 15.197px
+                margin-bottom: 7px
+
+            &__header
+                font-size: 59.81px
+                line-height: 56.807px
+
+            &__price
+                text-align: right
+                font-size: 70.916px
+                margin: -11px 20px 0 0
+
+                span
+                    font-size: 17.072px
+                    margin: 0 0 0 -18px
+
+            &__content-image
+                width: 199px
+                top: 86px
+                right: auto
+                left: 26px
+
+            &__gallery
+                margin-top: 162px
+                gap: 19px
+                grid-template-columns: repeat(3, 1fr)
+
+                img
+                    height: 59px
+                    width: 108px
+
+    .slider .swiper-pagination
+        top: auto
+        bottom: 115px
+
+    .main-page
+        .news-grid
+            margin-bottom: 0 !important
+
+    .gallery-page
+        .empty
+            padding-bottom: 52px
+
+@media (max-width: 375px)
+    body .content
+        .intro
+            margin-bottom: 0 !important
+
+        .section
+            padding: 30px 0 !important
+
+            &__header
+                font-size: 40px !important
+                line-height: 1.1 !important
+                margin-bottom: 20px !important
+
+        .main-page .recommend .section__header, .main-page .menu .section__header
+            font-size: 40px !important
+            line-height: 1.1 !important
+            margin-bottom: 20px !important
+
+        .main-page .intro .subscribe
+            margin-bottom: 30px !important
+
+        .main-page .intro-grid .teaser__image
+            height: 175px
+
+        .main-page .intro-grid
+            padding-bottom: 0
+
+        .ornament
+            margin-top: 30px
+            padding-top: 0 !important
+
+            &::before
+                height: 30px
+                top: -30px
+
+        .subscribe
+            padding: 30px !important
+
+            &__text
+                font-size: 40px !important
+                line-height: 1 !important
+
+        .gallery-block + .gallery-block
+            margin-top: 30px
+
+        .contacts-grid
+            grid-template-columns: 1fr
+            gap: 16px
+            margin-bottom: 30px
+
+        .section.contacts, .section.vacancies, .section.news-detail
+            padding: 0 !important
+
+        .section.path + .empty
+            padding-top: 0 !important
+
+        .section.news + .map
+            padding-top: 0 !important
+
+        .banner
+            min-height: 200px
+            height: auto
+            padding-bottom: 10px !important
+
+            h1
+                font-size: 40px !important
+                line-height: 1.1 !important
+                margin-bottom: 0 !important
+
+            &--dark2
+                &::before
+                    height: 40%
+
+        .bio
+            &__quote
+                font-size: 14px
+
+                br
+                    display: none
+
+        .vacancies
+            &__item
+                &-image
+                    min-width: auto
+
+        .teaser
+            padding: 15px !important
+
+            &__header
+                font-size: 40px !important
+                line-height: 0.9 !important
+
+            &__text
+                br
+                    display: none
+
+        .news-page .section.news
+            padding: 0 !important
+
+            & + .empty
+                padding-top: 0 !important
+
+        .news-grid
+            margin-bottom: 30px !important
+
+        .slide
+            height: 407px
+
+            &__header
+                font-size: 40px
+                line-height: 1.1
+
+            &__content-image
+                right: auto
+                top: auto
+                bottom: 80px
+                left: 10px
+
+            &__gallery
+                margin-top: 180px
+
+        .recommend__item-text
+            padding-left: 15px
+            padding-right: 15px
+
+    .news-page
+        .intro .subscribe
+            margin: 30px 0 !important

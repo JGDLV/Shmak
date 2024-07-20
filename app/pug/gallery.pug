@@ -1,0 +1,43 @@
+extends _layout.pug
+
+block variables
+    -
+        var title = 'Фотогалерея'
+        var description = 'Фотогалерея'
+        var index = true
+
+        var gallery = [
+            'img/gallery-01.png',
+            'img/gallery-01.png',
+            'img/gallery-01.png',
+            'img/gallery-01.png',
+            'img/gallery-01.png',
+            'img/gallery-01.png',
+        ]
+
+block content
+    .gallery-page
+        .section.gallery
+            .container
+                .gallery-block
+                    h1.section__header фотогалерея
+                    .gallery-grid
+                        each item in gallery
+                            .gallery__item
+                                a.gallery__link(href=item) 
+                                    img.gallery__image(src=item, alt="")
+
+                .gallery-block
+                    h2.section__header фотогалерея
+                    .gallery-grid
+                        each item in gallery
+                            .gallery__item
+                                a.gallery__link(href=item) 
+                                    img.gallery__image(src=item, alt="")
+
+        .section.empty.empty--static
+            .container
+                .subscribe
+                    .subscribe__inner
+                        p.subscribe__text подпишитесь на наш telegram
+                        a.subscribe__button.btn(href="#") подписаться

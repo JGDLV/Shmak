@@ -1,0 +1,58 @@
+extends _layout.pug
+
+block variables
+    -
+        var title = 'Меню'
+        var description = 'Меню'
+        var index = true
+        var menu = true
+
+        var recommend = [
+            {
+                image: 'img/recommend-01.png',
+                title: 'шмак говядина',
+                text: 'шмак френчи говядина. с жар. луком, грибами и соусом сырным с трюфелем',
+                price: '740'
+            },
+            {
+                image: 'img/recommend-02.png',
+                title: 'шмак индейка',
+                text: 'шмак френчи говядина. с жар. луком, грибами и соусом сырным с трюфелем',
+                price: '740'
+            },
+            {
+                image: 'img/recommend-03.png',
+                title: 'шмак веге',
+                text: 'шмак френчи говядина. с жар. луком, грибами и соусом сырным с трюфелем',
+                price: '740'
+            },
+        ]
+
+block content
+    .menu-page
+        .section.intro
+            .container
+                .intro__inner
+                    .banner.banner--menu
+                        img.banner__image(src="img/menu-banner.png" alt="")
+        .section.section--gray.recommend
+            .experimental-bg.ornament.ornament--gray.rellax
+            .container
+                h1.section__header меню шмак
+                .recommend-grid
+                    each item in recommend
+                        .recommend__item
+                            img.recommend__item-image(src=item.image alt="")
+                            .recommend__item-content
+                                p.recommend__item-title !{item.title}
+                                p.recommend__item-text !{item.text}
+                                p.recommend__item-price
+                                    | !{item.price}
+                                    span руб.
+
+        .section.empty.empty--static
+            .container
+                .subscribe.subscribe--red.pl-25
+                    .subscribe__inner
+                        p.subscribe__text не пропусти новые шмаки в меню
+                        a.subscribe__button.btn(href="#") подпишись

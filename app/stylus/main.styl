@@ -1,0 +1,1163 @@
+$red = #AE1613
+$text = #1A1C24
+$gray = #F3F3F3
+$bradius = 29px
+font('BERNIER Distressed', 'BERNIERDistressed-Regular', weight = 400, style = 'normal')
+
+body
+	body()
+	font-family: 'Montserrat', sans-serif
+	color: $text
+	font-size: 17px
+	font-weight: 400
+	line-height: 1.3
+
+.container
+	max-width: 1058px
+	padding: 0 14px
+
+.btn
+	border-radius: 7px
+	background: $red
+	color: #fff
+	display: flex
+	align-items: center
+	justify-content: center
+	width: 171px
+	max-width: 100%
+	height: 34px
+	font-size: 14px
+
+	&:hover
+		background: lighten($red, 15%)
+
+.header
+	padding: 35px 0 37px
+	background: #fff
+	z-index: 10
+
+	&__inner
+		display: flex
+		align-items: center
+		justify-content: space-between
+
+	&__button
+		// margin-left: auto
+
+	&.fixed
+		position: fixed
+		top: 0
+		left: 0
+		right: 0
+		padding: 15px 0
+		box-shadow: 0 0 10px rgba(#000, 0.2)
+		z-index: 30
+		background: $gray
+
+.logo
+	// margin-right: 191px
+	&__link
+		display: block
+		line-height: 0
+
+.main-menu
+	margin-top: 4px
+
+	// margin-right: 83px
+	&-items
+		display: flex
+		align-items: center
+		gap: 39px
+
+	&__link, a
+		color: $text
+		font-size: 16px
+		line-height: normal
+		text-transform: lowercase
+
+		&:hover
+			color: $red
+
+.social
+	display: flex
+	align-items: center
+	gap: 10px
+
+	&__link
+		svg path
+			transition: 0.3s ease
+
+		&:hover
+			svg path
+				fill: $red
+
+.banner
+	background: $gray
+	min-height: 407px
+	border-radius: $bradius
+	margin-bottom: 50px
+	background-repeat: no-repeat
+	background-position: center
+	position: relative
+	display: flex
+	flex-direction: column
+	justify-content: center
+
+	&__image
+		width: 100%
+		height: 100%
+		object-fit: cover
+		position: absolute
+		top: 0
+		left: 0
+		right: 0
+		bottom: 0
+		border-radius: $bradius
+
+	&--contacts
+		img
+
+	// display: none
+	// transform: scale(1) !important
+	&--news
+		// background: url('../img/news-banner.png')
+		padding: 45px
+
+	&--dark
+		&::before
+			absolute()
+			top: 0
+			left: 0
+			bottom: 0
+			right: 100px
+			background: linear-gradient(90deg, #1A1C24 0.05%, rgba(50, 54, 69, 0.68) 50%, rgba(100, 107, 138, 0) 76.97%)
+			z-index: 10
+			border-radius: $bradius
+
+	&--dark2
+		&::before
+			absolute()
+			top: 0
+			left: 0
+			bottom: 0
+			right: 100px
+			background: linear-gradient(90deg, #1A1C24 0.05%, rgba(100, 107, 138, 0) 76.97%)
+			z-index: 10
+			border-radius: $bradius
+
+		h1, p
+			color: #fff
+			z-index: 20
+
+	&--bio
+		h1
+			font-size: 70px !important
+			line-height: 66.486px !important
+			margin-bottom: 10px
+
+		p
+			font-family: 'Inter', sans-serif
+
+	h1
+		color: #FFF
+		font-family: 'BERNIER Distressed', sans-serif
+		font-size: 100px
+		font-weight: 400
+		line-height: 1
+		position: relative
+		z-index: 10
+
+.subscribe
+	border-radius: $bradius
+	background: #544A4A
+	padding: 26px 68px 25px 40px
+	position: relative
+
+	&--red
+		background: $red
+
+		.subscribe__button
+			background: #fff
+			color: $red
+
+	&__inner
+		display: flex
+		align-items: center
+		justify-content: space-between
+
+	&__text
+		color: #FFF
+		font-family: 'BERNIER Distressed'
+		font-size: 53px
+		line-height: 1
+		margin-top: 1px
+
+	&__button
+		width: 274px
+		font-size: 16px
+		box-shadow: 0px 0px 33.1px 8px rgba(174, 22, 19, 0.58)
+
+	&::after
+		absolute()
+		width: 62px
+		height: 54px
+		top: -21px
+		right: 23px
+		background: url('../img/tg-big.svg') no-repeat center
+
+.section
+	&__header
+		font-family: 'BERNIER Distressed', sans-serif
+		font-size: 70px
+		font-weight: 400
+		text-align: center
+		margin-bottom: 21px
+
+		&--light
+			color: #fff
+
+		span
+			color: $red
+
+	&--gray
+		background: $gray !important
+		border-radius: $bradius
+
+.intro
+	margin-bottom: 111px
+
+	&-grid
+		display: grid
+		grid-template-columns: repeat(2, 1fr)
+		gap: 20px
+		padding-top: 30px
+		margin-top: -30px
+		border-radius: $bradius
+		overflow: hidden
+
+.main-page
+	.intro
+		// padding-top: 16px
+
+	.banner
+		background: none
+		margin-bottom: -16px
+
+.video
+	height: 284px
+	background: #000
+	border-radius: $bradius
+	overflow: hidden
+	position: relative
+
+	&:hover
+		img
+			box-shadow: 0 0 33.1px 8px rgba(174, 22, 19, 0.58)
+
+	video
+		width: 100%
+		height: 100%
+		cursor: pointer
+		object-fit: cover
+
+	img
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		transition: 0.3s ease
+		cursor: pointer
+		border-radius: 50%
+
+		&.playing
+			opacity: 0
+
+.teaser
+	height: 284px
+	background: $red
+	color: #FFF
+	border-radius: $bradius
+	position: relative
+	padding: 30px 10px 10px 29px
+
+	// overflow-x: hidden
+	// overflow-y: visible
+	&__image
+		position: absolute
+		right: 0
+		bottom: 0
+
+	&__header
+		font-family: 'BERNIER Distressed'
+		font-size: 53px
+		line-height: 50px
+		margin-bottom: 9px
+
+	&__text
+		font-size: 16px
+		line-height: 20px
+
+		p + p
+			margin-top: 20px
+
+.recommend
+	background: $red
+	padding: 22px 0 111px
+
+	// padding: 52px 0 111px
+	&-grid
+		display: grid
+		gap: 30px
+
+	&__item
+		background: #fff
+		border-radius: $bradius
+		display: flex
+		align-items: center
+		padding: 0 47px
+
+		// transition: 1s ease
+		&.stub
+			background: url('../img/stub-left2.svg') no-repeat top right
+
+		&:nth-child(2n)
+			flex-direction: row-reverse
+
+			.recommend__item-content
+				padding-left: 41px
+
+		&:nth-child(2)
+			&.stub
+				background: url('../img/stub-right2.svg') no-repeat top left
+
+		&:nth-child(3)
+			&.stub
+				background: url('../img/stub-top.svg') no-repeat top right
+
+		&-content
+			max-width: 300px
+			padding: 29px 0 28px 27px
+
+		&-title
+			font-family: 'BERNIER Distressed'
+			font-size: 53px
+			line-height: 50px
+			letter-spacing: 12.5px
+			margin-bottom: 9px
+
+		&-text
+			font-size: 16px
+			margin-bottom: 8px
+			line-height: normal
+
+		&-price
+			color: $red
+			font-family: 'BERNIER Distressed'
+			font-size: 61px
+			line-height: 1
+
+			span
+				font-size: 26px
+				padding-left: 4px
+
+.menu
+	padding: 102px 0 60px
+
+	&__header
+		margin-bottom: 40px
+
+	.subscribe
+		margin-top: -109px
+		padding-left: 45px
+
+		&__button
+			width: 219px
+
+	&-grid
+		display: grid
+		grid-template-columns: repeat(4, 1fr)
+		// gap: 34px
+		margin-bottom: 35px !important
+
+	&__item
+		&-link
+			display: block
+			line-height: 0
+
+		&-image
+			width: 100%
+			height: 155px
+			object-fit: cover
+			border-radius: 20px 20px 0 0
+
+		&-content
+			padding: 20px 14px 14px 15px
+			background: $gray
+			border-radius: 0 0 20px 20px
+
+		&-title
+			font-family: 'Inter', sans-serif
+			font-size: 16px
+			font-weight: 700
+			line-height: normal
+			text-transform: uppercase
+			margin-bottom: 10px
+			display: inline-block
+
+		&-text
+			font-size: 13px
+			line-height: normal
+			margin-bottom: 10px
+
+		&-price
+			color: $red
+			font-family: 'Inter', sans-serif
+			font-size: 16px
+			font-weight: 700
+			text-align: right
+
+	&__button
+		width: 219px
+
+.empty
+	.subscribe
+		position: absolute
+		left: 14px
+		right: 14px
+		transform: translateY(-51px)
+		padding-left: 45px
+
+		&__button
+			width: 219px
+
+	&--static
+		padding: 60px 0
+
+		.subscribe
+			position: static
+			transform: none
+
+.button-center
+	.btn
+		margin: auto
+
+.news
+	padding: 48px 0 25px
+
+	&__header
+		margin-bottom: 29px
+
+	&-grid
+		display: grid
+		grid-template-columns: repeat(4, 1fr)
+		// gap: 34px
+		margin-bottom: 35px !important
+
+	&__item
+		&-link
+			display: block
+			line-height: 0
+
+			&:hover
+				opacity: 0.9
+
+		&-image
+			width: 100%
+			height: 155px
+			object-fit: cover
+			border-radius: 20px 20px 0px 0px
+
+		&-content
+			background: #fff
+			padding: 21px 15px 35px 15px
+
+			p
+				font-size: 13px
+				line-height: normal
+				margin-bottom: 10px
+
+		&-title
+			font-size: 16px
+			font-weight: 700
+			line-height: normal
+			text-transform: uppercase
+			margin-bottom: 9px
+			display: inline-block
+			color: $text
+
+			&:hover
+				color: $red
+
+		&-text
+			font-size: 13px
+			line-height: normal
+			margin-bottom: 10px
+
+		&-button
+			width: 100%
+			height: 39px
+			border-radius: 0px 0px 20px 20px
+			background: $red
+
+	&-detail
+		p
+			margin-bottom: 21px
+
+			&:last-of-type
+				margin-bottom: 0
+
+		h1
+			font-family: 'BERNIER Distressed', sans-serif
+			font-size: 70px
+			font-weight: 400
+			text-align: center
+			margin-bottom: 21px
+
+.map
+	padding: 59px 0 60px
+	line-height: 0
+
+	&__inner
+		// background: #000
+		height: 341px
+		border-radius: $bradius
+		overflow: hidden
+
+.footer
+	background: #313131
+	color: #FFF
+	font-size: 12px
+	font-weight: 300
+	line-height: 24px
+	padding: 61px 0 52px
+
+	&__button
+		margin-top: -5px
+
+	.social
+		padding-left: 5px
+		gap: 13px
+		margin-top: 2px
+
+	&__section
+		margin-right: 62px
+
+	&__inner
+		display: grid
+		grid-column-gap: 16px
+		grid-row-gap: 31px
+		grid-template-columns: repeat(7, 1fr)
+
+	&-links
+		display: flex
+		align-items: center
+		gap: 10px
+
+		a
+			color: #FFF
+			font-size: 12px
+			font-weight: 300
+			line-height: 24px
+
+			&:hover
+				color: lighten($red, 25%)
+
+	&__link
+		color: #FFF
+		font-size: 12px
+		font-weight: 300
+		line-height: 24px
+
+		&:hover
+			color: lighten($red, 25%)
+
+	&-logo
+		grid-row-start: 1
+		grid-row-end: 3
+
+		&__link
+			display: block
+			line-height: 0
+
+	&-one
+		grid-column-start: 2
+		grid-column-end: 8
+		display: flex
+		align-items: center
+		justify-content: space-between
+		margin-top: 4px
+
+	&-two
+		grid-column-start: 2
+		grid-column-end: 8
+		display: flex
+		align-items: flex-end
+		padding-left: 3px
+
+.created
+	margin-left: auto
+	margin-bottom: 7px
+
+	a
+		display: flex
+		gap: 5px
+		color: #FFF
+		text-align: right
+		font-size: 12px
+		font-weight: 300
+		line-height: 12px
+
+	// a
+	// display: block
+	// line-height: 0
+	// margin-top: 1px
+	img
+		width: 22px
+		height: 22px
+
+#top
+	background: $red
+	color: #fff
+
+.news-page
+	.intro
+		margin-bottom: 70px
+
+	.news
+		padding-top: 0
+		padding-bottom: 10px
+
+		&-grid
+			row-gap: 50px
+			column-gap: 34px
+			margin-bottom: 50px !important
+
+		&__item
+			&-content
+				background: $gray
+
+	&-detail
+		.intro
+			margin-bottom: 49px
+
+	.section__header
+		margin-bottom: 12px
+
+	.empty
+		padding: 52px 0 56px
+
+.menu-page
+	.intro
+		margin-bottom: 115px
+
+	.recommend
+		padding-top: 4px
+
+	.section
+		&__header
+			margin-bottom: 39px
+
+	.empty
+		padding: 78px 0 58px
+
+.gallery
+	padding: 25px 0 47px
+
+	&-block
+		& + &
+			margin-top: 74px
+
+	&-grid
+		display: grid
+		row-gap: 32px
+		column-gap: 23px
+		grid-template-columns: repeat(3, 1fr)
+
+	&__link
+		display: block
+		line-height: 0
+
+		&:hover
+			opacity: 0.8
+
+	&__image
+		border-radius: 15px
+		width: 100%
+		height: 218px
+		object-fit: cover
+
+	&-page
+		.section__header
+			margin-bottom: 41px
+
+.contacts
+	&-grid
+		display: grid
+		grid-template-columns: repeat(4, 1fr)
+		gap: 30px
+		margin-bottom: 47px
+
+	&__item
+		&-title
+			font-size: 16px
+			font-weight: 700
+			line-height: normal
+			margin-bottom: 7px
+
+		&-text
+			margin-bottom: 1px
+
+		a
+			color: $text
+
+			&:hover
+				color: $red
+
+.contacts-page
+	.intro
+		margin-bottom: 0
+
+	.section__header
+		margin-bottom: 30px
+
+	.empty
+		padding: 55px 0 60px
+
+	.map
+		padding: 0 0 5px
+
+.vacancies
+	&-grid
+		display: grid
+		gap: 37px
+
+	&__item
+		display: flex
+		gap: 26px
+
+		&-image
+			min-width: 360px
+			width: 360px
+			object-fit: cover
+			display: block
+
+		&-content
+			width: fit-content
+
+		&-header
+			font-size: 16px
+			font-weight: 700
+			line-height: normal
+			text-transform: uppercase
+			margin-bottom: 7px
+
+	&-page
+		.intro
+			margin-bottom: 0
+
+	.section__header
+		margin-bottom: 29px
+
+	.empty
+		padding: 38px 0 60px
+
+.bio
+	&-info
+		position: relative
+		margin-bottom: 120px
+
+		&::after
+			absolute()
+			background: url('../img/signature.svg') no-repeat center
+			width: 174px
+			height: 149px
+			right: -3px
+			bottom: -108px
+
+	&__quote
+		text-align: center
+		font-size: 32px
+		font-style: italic
+		line-height: 41.6px
+
+	&__name
+		text-align: right
+		font-size: 23px
+		font-weight: 700
+		line-height: normal
+		margin: -4px 68px 0 0
+
+	&-grid
+		display: grid
+		gap: 60px
+
+	&__item
+		display: flex
+		gap: 34px
+
+		&-image
+			width: 232px
+			height: 232px
+			object-fit: cover
+			border-radius: 50%
+
+		&-content
+			width: fit-content
+
+		&-header
+			color: $red
+			font-size: 54px
+			font-weight: 900
+			line-height: normal
+			margin-bottom: 9px
+
+		&-text
+			p
+				margin-bottom: 16px
+				max-width: 610px
+
+				&:last-child
+					margin-bottom: 0
+
+	&-page
+		.section__header
+			margin-bottom: 45px
+
+	.intro
+		margin-bottom: 0
+
+	.empty
+		padding: 120px 0 75px
+
+.progress-wrap
+	position: fixed
+	bottom: 40px
+	right: 40px
+	width: 40px
+	height: 40px
+	cursor: pointer
+	display: block
+	border-radius: 100%
+	box-shadow: inset 0 0 0 0.1em rgba(128, 130, 134, 0.25)
+	z-index: 1010
+	opacity: 0
+	visibility: hidden
+	transform: translateY(0.75em)
+	transition: all 200ms linear
+	background: url('../img/arrow.svg') no-repeat center
+	background-size: 16px
+
+	&::before
+		position: absolute
+		top: 50%
+		left: 50%
+		transform: translate(-50%, -50%)
+		color: $red
+
+.progress-wrap.active-progress
+	opacity: 1
+	visibility: visible
+
+.progress-wrap svg.progress-circle path
+	stroke: $red
+	stroke-width: 4
+	fill: transparent
+	box-sizing: border-box
+	transition: all 200ms linear
+
+.mobile-header
+	background: $gray
+	box-shadow: 0 0 10px rgba(#000, 0.2)
+	position: fixed
+	z-index: 9999
+	top: 0
+	left: 0
+	right: 0
+	display: none
+	padding: 10px 0
+
+	&__cta
+		font-family: 'BERNIER Distressed', sans-serif
+		font-size: 24px
+		margin: 1px auto 0 0
+
+		a
+			color: $red
+
+			&:hover
+				color: lighten($red, 15%)
+
+	&__inner
+		display: flex
+		align-items: center
+		justify-content: space-between
+		gap: 10px
+
+	&__center
+		display: flex
+		align-items: center
+		gap: 10px
+
+		.social
+			margin-top: 3px
+
+	&__callback
+		border-radius: 50%
+		width: 24px
+		height: 24px
+		background: $red
+		color: #fff
+		display: flex
+		align-items: center
+		justify-content: center
+
+		svg
+			width: 14px !important
+			height: 14px !important
+
+	.logo
+		&__image
+			width: 26px
+
+	.menu-toggle
+		margin: 0
+		display: flex
+		align-items: center
+		justify-content: center
+		border-radius: 50%
+		width: 24px
+		height: 24px
+		cursor: pointer
+		background: $red
+		transition: 0.3s ease
+
+		&:hover
+			background: lighten($red, 15%)
+
+		.icon-toggle
+			width: 12px
+			height: 10px
+			position: relative
+			display: flex
+			align-items: center
+
+			span
+				height: 2px
+				background: #fff
+				position: absolute
+				width: 100%
+				transition: 0.3s
+				left: 0
+
+				&:first-child
+					top: 0
+
+				&:last-child
+					bottom: 0
+
+			&.active
+				span
+					&:first-child
+						top: auto
+						transform: rotate(45deg)
+
+					&:last-child
+						bottom: auto
+						transform: rotate(-45deg)
+
+					&:nth-child(2)
+						opacity: 0
+
+.mobile-menu
+	display: none
+	position: fixed
+	top: 54px
+	left: 0px
+	right: 0px
+	z-index: 21
+	background: rgb(255, 255, 255)
+	padding: 16px
+	box-shadow: 0 5px 5px rgba(0, 0, 0, 0.2)
+
+	.main-menu
+		width: 100%
+		margin: 0
+		padding: 10px 0
+
+	.main-menu-items
+		flex-direction: column
+		width: 100%
+		align-items: flex-end
+		gap: 10px
+
+	.social
+		width: 100%
+		justify-content: flex-end
+		margin: 16px 0
+
+.slider
+	padding: 16px 0
+	overflow: hidden
+
+	.swiper-pagination
+		top: 37px
+		padding-right: 23px
+		bottom: auto
+		display: flex
+		gap: 5px
+		justify-content: flex-end
+		align-items: center
+		z-index: 11
+
+		&-bullet
+			background: $text !important
+			width: 10px
+			height: 10px
+			border-radius: 50%
+			margin: 0 !important
+			opacity: 1 !important
+
+			&-active
+				background: $red !important
+				width: 14px
+				height: 14px
+
+.slide
+	display: flex
+	height: 407px
+	background: $gray
+	border-radius: $bradius
+
+	&__left
+		display: block
+		line-height: 0
+		width: 429px
+		// position relative
+		background: url('../img/slide-bg.svg') no-repeat top 32px left
+		min-height: 100%
+
+	&__right
+		width: fit-content
+		padding: 57px 0 0 0
+
+	&__image
+		position: absolute
+		left: 0
+		bottom: 0
+
+	&__content-image
+		position: absolute
+		top: 47px
+		right: 71px
+
+	&__text
+		font-size: 20px
+		line-height: 18.996px
+		margin-bottom: 11px
+		padding-left: 10px
+
+	&__header
+		font-family: 'BERNIER Distressed', sans-serif
+		font-size: 78px
+		font-weight: 400
+		line-height: 74.084px
+		margin-bottom: -2px
+
+	&__price
+		color: #AE1613
+		font-family: 'BERNIER Distressed', sans-serif
+		font-size: 108px
+		font-weight: 400
+		line-height: 102.578px
+
+		span
+			font-size: 26px
+			line-height: 1
+			writing-mode: vertical-rl
+			margin: 0 0 0 -27px
+			transform: translateY(5px)
+
+	&__gallery
+		display: grid
+		grid-template-columns: repeat(3, 69px)
+		gap: 25px
+		margin: 17px 0 0 4px
+
+		img
+			width: 69px
+			height: 69px
+			object-fit: cover
+			border-radius: 13px
+
+.content
+	overflow: hidden
+
+.recommend
+	position: relative
+	// background: none
+	// overflow: hidden
+	border-radius: $bradius $bradius
+
+.intro-grid
+	position: relative
+	z-index: 10
+
+.experimental-bg
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	bottom: 0
+	// background url('../img/experimental-bg.svg') repeat-x top center
+	// background-size: 181%
+	border-radius: 0 0 $bradius $bradius
+	transition: 0.3s ease
+
+.decor
+	position: absolute
+	top: 0
+	left: 0
+	transition: 0.3s ease
+
+	&--1
+		width: 393.815px
+		height: 134.7px
+		transform: rotate(-15deg)
+		top: 65px
+		left: -136px
+
+	&--2
+		width: 563px
+		height: 190px
+		transform: rotate(19.724deg)
+		top: 433px
+		left: -144px
+
+	&--3
+		width: 262px
+		height: 265px
+		top: 714px
+		left: -181px
+
+	&--4
+		width: 392px
+		height: 303px
+		transform: rotate(74.939deg)
+		left: auto
+		top: 62px
+		right: -209px
+
+	&--5
+		width: 279.961px
+		height: 257.633px
+		transform: rotate(33.597deg)
+		left: auto
+		top: 544px
+		right: -229px
+
+	&--6
+		width: 582px
+		height: 193px
+		left: auto
+		top: 1000px
+		right: -99px
